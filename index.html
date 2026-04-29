@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis 15 | Sarita</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!-- AOS Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Music Player -->
+    <div class="music-player">
+        <button id="play-btn" class="floating-btn"><i class="fas fa-play"></i></button>
+        <div id="youtube-player" style="position: absolute; width: 0; height: 0; border: 0;"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1500">
+            <p class="subtitle">Mis 15</p>
+            <h1 class="title">Sarita</h1>
+            <p class="date-scroll">06 . 06 . 2026</p>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section" id="countdown">
+        <div class="container" data-aos="fade-up">
+            <h2>Faltan</h2>
+            <div class="timer" id="timer">
+                <div class="time-box"><span id="days">00</span>
+                    <p>Días</p>
+                </div>
+                <div class="time-box"><span id="hours">00</span>
+                    <p>Hs</p>
+                </div>
+                <div class="time-box"><span id="minutes">00</span>
+                    <p>Min</p>
+                </div>
+                <div class="time-box"><span id="seconds">00</span>
+                    <p>Seg</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parents Info / Quote Section -->
+    <section class="quote-section" id="quote">
+        <div class="container" data-aos="zoom-in">
+            <p class="parents-text">Carlos Rodríguez y Bibiana Vasco<br>tienen el honor de invitarte a celebrar<br>los 15 años de su querida hija</p>
+            <h2 class="title" style="font-family: 'Great Vibes', cursive; font-size: 4rem; color: #d4af37; margin: 10px 0;">Sarita</h2>
+            <p class="quote-text">"Te invito a festejar esta noche ¡inolvidable!"</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 data-aos="fade-up">Mis Recuerdos</h2>
+            <div class="carousel-wrapper" data-aos="fade-up">
+                <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-container">
+                    <div class="gallery-track" id="gallery-track">
+                        <img src="assets/galeria1.jpg" alt="Sarita" class="gallery-img">
+                        <img src="assets/galeria2.jpg" alt="Sarita" class="gallery-img">
+                        <img src="assets/galeria3.jpg" alt="Sarita" class="gallery-img">
+                        <img src="assets/galeria4.jpg" alt="Sarita" class="gallery-img">
+                        <img src="assets/galeria5.jpg" alt="Sarita" class="gallery-img">
+                        <img src="assets/galeria6.jpg" alt="Sarita" class="gallery-img">
+                        <img src="assets/galeria7.jpg" alt="Sarita" class="gallery-img">
+                        <img src="assets/galeria8.jpg" alt="Sarita" class="gallery-img">
+                        <img src="assets/galeria9.jpg" alt="Sarita" class="gallery-img">
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section class="event-details" id="event">
+        <div class="container">
+            <h2 data-aos="fade-up">Cuándo y Dónde</h2>
+            <div class="event-cards">
+                <!-- Ceremony / Party -->
+                <div class="card" data-aos="fade-up">
+                    <i class="fas fa-glass-cheers icon"></i>
+                    <h3>Fiesta</h3>
+                    <p>Sábado 06 de Junio</p>
+                    <p>7:00 pm</p>
+                    <p>Salón comunal del Topacio</p>
+                    <button class="btn modal-btn" data-modal="location-modal">Cómo Llegar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dress Code Section -->
+    <section class="dress-code" id="dress-code" data-aos="fade-up">
+        <div class="container">
+            <i class="fas fa-user-tie icon"></i>
+            <h2>Dress Code</h2>
+            <p>Elegante / Formal</p>
+        </div>
+    </section>
+
+    <!-- Gifts Section -->
+    <section class="gifts-section" id="gifts" data-aos="fade-up">
+        <div class="container">
+            <i class="fas fa-envelope-open-text icon"></i>
+            <h2>Regalo</h2>
+            <p>El mejor regalo es tu presencia. Pero si deseas hacerme un presente, agradezco tu contribución en <strong>Lluvia de Sobres</strong> el día del evento.</p>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section" id="instagram" data-aos="fade-up">
+        <div class="container">
+            <i class="fab fa-instagram icon"></i>
+            <h2>Compartimos en Instagram</h2>
+            <p>Usá el hashtag del evento para subir tus fotos y videos.</p>
+            <h3 class="hashtag">#Mis15Sarita</h3>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp-section" id="rsvp" data-aos="fade-up">
+        <div class="container">
+            <h2>Confirmar Asistencia</h2>
+            <p>Espero contar con tu presencia. Por favor, confirmá antes del 20 de Mayo.</p>
+            <a href="https://wa.me/573125026074?text=Hola%20Sarita!%20Confirmo%20mi%20asistencia%20a%20tu%20fiesta!"
+                class="btn wp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> Confirmar por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Diseñado con ❤️ para Sarita</p>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Location Modal -->
+    <div class="modal" id="location-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Ubicación</h2>
+            <p>Salón comunal del Topacio</p>
+            <div class="map-container" style="text-align: center; margin-top: 2rem; background: transparent; box-shadow: none;">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maps.app.goo.gl/6ancd2R2yihGEqWa6" alt="QR Ubicación" style="margin-bottom: 1rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                <br>
+                <a href="https://maps.app.goo.gl/6ancd2R2yihGEqWa6" target="_blank" class="btn" style="background-color: var(--accent-color); color: var(--bg-color-dark); margin-top: 0; display: inline-flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-map-marker-alt"></i> Abrir en Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
