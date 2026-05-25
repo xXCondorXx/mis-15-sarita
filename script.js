@@ -27,7 +27,7 @@ function onYouTubeIframeAPIReady() {
             'autoplay': 0,
             'controls': 0,
             'loop': 1,
-            'playlist': 'qfCY6Lp4nko' // Necesario para que el loop funcione
+            'playlist': 'yIzyS9yrgag' // Necesario para que el loop funcione
         },
         events: {
             'onReady': onPlayerReady,
